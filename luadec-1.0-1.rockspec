@@ -1,7 +1,7 @@
 package = "luadec"
 version = "1.0-1"
 source = {
-   url = "git://github.com/Yue-bin/luadec",
+   url = "git://github.com/Yue-bin/luadec.git",
    tag = "v1.1"
 }
 description = {
