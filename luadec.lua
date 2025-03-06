@@ -5,11 +5,6 @@ _M.decorators = {}
 
 local status = {}
 
-function _M.add_decorator(name, decorator)
-    _M.decorators[name] = decorator
-    status[name] = false
-end
-
 local function decorate(callable, event)
     return function()
         _M.decorators[event](callable)
@@ -39,7 +34,12 @@ function _M.start_listen(table_to_listen)
     })
 end
 
-function _M.At(name)
+function _M.add_decorator(name, decorator)
+    _M.decorators[name] = decorator
+    status[name] = false
+end
+
+function _M.at(name)
     status[name] = true
 end
 
