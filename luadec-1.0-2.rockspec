@@ -1,8 +1,8 @@
 package = "luadec"
-version = "1.0-1"
+version = "1.0-2"
 source = {
    url = "git://github.com/Yue-bin/luadec.git",
-   tag = "v1.1"
+   tag = "v1.0-2"
 }
 description = {
    summary = "A decorator implementation of lua",
