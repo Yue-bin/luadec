@@ -1,8 +1,8 @@
 package = "luadec"
-version = "1.0-0"
+version = "1.0-1"
 source = {
    url = "git://github.com/Yue-bin/luadec",
-   tag = "v1.0"
+   tag = "v1.1"
 }
 description = {
    summary = "A decorator implementation of lua",
@@ -18,6 +18,6 @@ dependencies = {
 build = {
    type = "builtin",
    modules = {
-      luadec = "luadec.lua",
+      luadec = "src/luadec.lua",
    }
 }
